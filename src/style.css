@@ -2,8 +2,28 @@
     margin: 0;
     padding: 0;
 
+    font-family: "trip-sans-medium", sans-serif;
+
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    background-color: #B5BAFF;
+}
+
+#box-one{
+    font-size: 50px;
+}
+
+#box-two{
+    font-size: 20px;
+    padding: 250px;
+}
+
+#box-three{
+    padding: 100px;
+
+    flex-direction: row;
+    gap: 100px;
 }
 
 .box {
@@ -14,8 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-
+    
     text-align: center;
     margin: 10px;
 }
