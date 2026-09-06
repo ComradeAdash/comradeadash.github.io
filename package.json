@@ -1,8 +1,12 @@
 {
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "lodash": "^4.18.1"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.25"
+    "@types/lodash": "^4.17.25",
+    "typescript": "^5.9.3"
   }
 }
