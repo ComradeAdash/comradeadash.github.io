@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    box-sizing: border-box;
+}
+
+.box {
+    min-height: 100vh;
+    scroll-snap-align: start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+    text-align: center;
+    margin: 10px;
+}
