@@ -58,12 +58,26 @@
     font-family: "trip-sans-bold";
     src: url("../assets/fonts/trip-sans-bold.otf") format("opentype");
     font-weight: 100;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "trip-sans-medium";
     src: url("../assets/fonts/trip-sans-medium.otf") format("opentype");
     font-weight: 100;
-    font-style: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "trip-sans-ultra";
+    src: url("../assets/fonts/trip-sans-ultra.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "trip-sans-mono-regular";
+    src: url("../assets/fonts/trip-sans-mono-regular.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
 }
