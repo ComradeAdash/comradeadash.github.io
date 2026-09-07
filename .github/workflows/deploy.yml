@@ -9,6 +9,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   # Build Job - this compiles the TypeScript code and prepares it for deployment
   build:
@@ -23,6 +26,13 @@ jobs:
           node-version: '22'
       - name: 'Build Website'
         run: npm ci && npm run build
+      - name: 'Prepare Pages artifact'
+        run: |
+          mkdir -p site/src site/assets site/dist
+          cp index.html site/index.html
+          cp src/style.css src/fonts.css site/src/
+          cp -r assets/. site/assets/
+          cp dist/index.js site/dist/index.js
       - name: 'Upload artifact'
         uses: actions/upload-pages-artifact@v4
         with:
