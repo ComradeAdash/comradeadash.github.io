@@ -7,7 +7,7 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: #B5BAFF;
+    background: none;
 }
 
 .name{
@@ -27,21 +27,31 @@
 
 #box-one{
     gap: 5px;
+    background-image: url("../assets/svg/layer_1.svg");
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 #box-two{
     font-size: 20px;
-    padding: 250px;
-    gap: 40px;
+    padding: 150px;
+    background-image: url("../assets/svg/layer_2.svg");
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 #box-three{
-    padding: 100px;
+    background-color: #898AC4;
+}
 
+#box-three > .slide{
+    display: flex;
     flex-direction: row;
+    padding: 100px;
+    gap: 100px;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 100px;
+    justify-content: center;
 }
 
 .built-with {
@@ -64,6 +74,7 @@
 #links img{
     width: 64px;
     height: auto;
+    background: none;
 }
 
 .box {
@@ -76,7 +87,7 @@
     align-items: center;
     
     text-align: center;
-    margin: 10px;
+    margin: 0 auto;
 }
 
 .img-link:hover{
