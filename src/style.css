@@ -77,6 +77,10 @@
     background: none;
 }
 
+#github:hover{
+    transform: scale(1.9);
+}
+
 .box {
     min-height: 100vh;
     scroll-snap-align: start;
