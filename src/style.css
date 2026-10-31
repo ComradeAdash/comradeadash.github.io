@@ -82,6 +82,7 @@
 }
 
 .box {
+    position: relative;
     min-height: 100vh;
     scroll-snap-align: start;
 
@@ -97,6 +98,45 @@
 .img-link:hover{
     transform: scale(1.5);
     transition: all 0.5s;
+}
+
+.chevron{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.chevron-pos{
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 15px);
+
+    width: 30px;
+    height: 30px;
+}
+
+.bounce{
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    border-color: #474888;
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg);
+    border-color: black;
+  }
+  100% {
+    transform: translateY(0) rotate(45deg);
+    border-color: #474888;
+  }
 }
 
 .hidden{
