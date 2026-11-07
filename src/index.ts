@@ -1,18 +1,8 @@
-// console.log("test");
+import { observer } from "./utils/animations.js";
+import * as carousel from "./utils/carousel.js";
 
-// This callback function observves multiple elements at the same time
-// It checks if the element is intersecting with the viewport
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
+let slideIndex = 1
+const hiddenElements = document.querySelectorAll<HTMLElement>(".hidden");
 
-            // allows us to show the animation multiple times when the element is scrolled out of view and back in
-        } else {
-            entry.target.classList.remove("show");
-        }
-    });
-});
-
-const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+carousel.showSlides(slideIndex);
